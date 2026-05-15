@@ -1,4 +1,4 @@
-// import BookingCard from "@/components/BookingCard";
+import BookingCard from "@/components/BookingCard";
 import { DeleteAlert } from "@/components/DeleteAlert";
 import { EditModal } from "@/components/EditModal";
 // import { auth } from "@/lib/auth";
@@ -32,7 +32,7 @@ const DestinationDetailsPage = async ({ params }) => {
         <DeleteAlert destination={destination} />
       </div>
       <Image
-        className="w-full h-100 object-cover"
+        className="w-full h-100 object-cover scale-30"
         alt={destinationName}
         src={imageUrl}
         height={500}
@@ -61,7 +61,7 @@ const DestinationDetailsPage = async ({ params }) => {
         </div>
 
 
-        {/* <BookingCard destination={destination} /> */}
+        <BookingCard destination={destination} />
       </div>
 
 

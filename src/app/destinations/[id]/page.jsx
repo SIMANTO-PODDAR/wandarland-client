@@ -1,5 +1,5 @@
 // import BookingCard from "@/components/BookingCard";
-// import { DeleteAlert } from "@/components/DeleteAlert";
+import { DeleteAlert } from "@/components/DeleteAlert";
 import { EditModal } from "@/components/EditModal";
 // import { auth } from "@/lib/auth";
 // import { headers } from "next/headers";
@@ -29,7 +29,7 @@ const DestinationDetailsPage = async ({ params }) => {
     <div className="max-w-7xl mx-auto">
       <div className="flex  items-center gap-3 justify-end mt-5 mb-3">
         <EditModal destination={destination} />
-        {/* <DeleteAlert destination={destination} /> */}
+        <DeleteAlert destination={destination} />
       </div>
       <Image
         className="w-full h-100 object-cover"

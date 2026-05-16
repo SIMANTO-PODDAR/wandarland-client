@@ -8,13 +8,13 @@ export function BookingCancelAlert({ bookingId }) {
 
   const handleCancelBooking = async () => {
 
-    // const {data:tokenData} = await authClient.token()
+    const { data: tokenData } = await authClient.token();
 
     const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/booking/${bookingId}`, {
       method: "DELETE",
       headers: {
         "content-type": "application/json",
-        // authorization: `Bearer ${tokenData?.token}`
+        authorization: `Bearer ${tokenData?.token}`
       }
     })
 

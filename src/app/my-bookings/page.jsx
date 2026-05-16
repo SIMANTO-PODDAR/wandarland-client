@@ -1,4 +1,4 @@
-// import { BookingCancelAlert } from "@/components/BookingCancelAlert";
+import { BookingCancelAlert } from "@/components/BookingCancelAlert";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import Image from "next/image";
@@ -51,7 +51,7 @@ const MyBookingPage = async () => {
                 ${booking.price}
               </p>
 
-              {/* <BookingCancelAlert bookingId={booking._id} /> */}
+              <BookingCancelAlert bookingId={booking._id} />
             </div>
           </div>
         ))}
